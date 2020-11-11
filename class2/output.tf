@@ -1,5 +1,5 @@
-output "keyname" {
-    value = "${aws_key_pair.class.key_name}"
+output "DETAILS" {
+    value = "${aws_key_pair.class.key_name}, ${aws_instance.web.id}, ${aws_instance.web.id}"
 }
 
 output "ID" {
@@ -23,4 +23,8 @@ output "PIP" {
 
 output "DNS" {
     value = "${aws_route53_record.www.name}"
+}
+
+output "my_output" {
+    value = "my message"
 }
