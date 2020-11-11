@@ -6,7 +6,6 @@ resource "aws_instance" "web" {
     user_data = "${file("userdata_file.sh")}"
     vpc_security_group_ids = ["${aws_security_group.class2.id}"]
     availability_zone = "us-east-1a"
-
 }
 
 resource "aws_ebs_volume" "example" {
