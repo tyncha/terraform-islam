@@ -1,4 +1,4 @@
 resource "aws_iam_user" "tim" {
-   name = "tim"
-   path = "/"
+  name = "tim"
+  path = "/"
 }
