@@ -5,18 +5,13 @@ module "webapp" {
     min_size = "1"
     desired_capacity = "1"
 }
-
-
 module "python" {
     source = "../class4"
-    region = "us-east-1"
+    region = "us-west-2"
     max_size = "1"
     min_size = "1"
     desired_capacity = "1"
 }
-
-
-
 module "python-eu" {
     source = "../class4"
     region = "eu-west-1"
@@ -24,8 +19,6 @@ module "python-eu" {
     min_size = "1"
     desired_capacity = "1"
 }
-
-
 module "python-ap" {
     source = "../class4"
     region = "ap-southeast-1"
