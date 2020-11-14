@@ -14,3 +14,22 @@ module "python" {
     min_size = "1"
     desired_capacity = "1"
 }
+
+
+
+module "python-eu" {
+    source = "../class4"
+    region = "eu-west-1"
+    max_size = "1"
+    min_size = "1"
+    desired_capacity = "1"
+}
+
+
+module "python-ap" {
+    source = "../class4"
+    region = "ap-southeast-1"
+    max_size = "1"
+    min_size = "1"
+    desired_capacity = "1"
+}
